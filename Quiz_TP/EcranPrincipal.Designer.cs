@@ -96,7 +96,6 @@
             this.Controls.Add(this.CmbMenuQuiz);
             this.Name = "FrmEcranPrincipal";
             this.Text = "Ecran Principale";
-            this.Load += new System.EventHandler(this.FrmEcranPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -30,7 +30,7 @@ namespace QUIZ.DataAccess
                 connexion.Open();
 
                 //2.Préparer envoie d'une commande Mysql
-                string requete = "SELECT  enonce, multipleChoice, quizId FROM t_question WHERE quizId" + idQuiz;
+                string requete = "SELECT  enonce, multipleChoice, quizId FROM t_question WHERE quizId" +idQuiz;
                 commande = new MySqlCommand(requete, connexion); ;
 
                 //3.Envoyer la commande 

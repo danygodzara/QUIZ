@@ -30,7 +30,7 @@ namespace Quiz_TP.DataAccess
                 connexion.Open();
 
                 //2.Préparer envoie d'une commande Mysql
-                string requete = "SELECT text, correct, questionId FROM t_reponse WHERE questionId"+IdQues;
+                string requete = "SELECT text, correct, questionId FROM t_reponse WHERE questionId" + 1;//IdQues;
                 commande = new MySqlCommand(requete, connexion); ;
 
                 //3.Envoyer la commande 

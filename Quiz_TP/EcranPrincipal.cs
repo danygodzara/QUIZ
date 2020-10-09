@@ -19,7 +19,7 @@ namespace Quiz_TP
         private Quiz selectedQuiz;
         private int nomQuiz;
 
-        private List<Question> questions;
+        private List<Question> questions ;
         private Question selectedQues;
         private int nomQues;
 
@@ -43,9 +43,9 @@ namespace Quiz_TP
 
         private void BtnDemarrer_Click(object sender, EventArgs e)
         {
+            GboxQuestion.Text = selectedQues.ToString();
             questions = QuestionDAO.FindAll(nomQuiz);
             selectedQues = questions[0];
-            GboxQuestion.Text = selectedQues.ToString();
             nomQues = selectedQues.Id;
 
             reponses = ReponseDAO.FindAll(nomQues);
@@ -93,9 +93,6 @@ namespace Quiz_TP
 
         }
 
-        private void FrmEcranPrincipal_Load(object sender, EventArgs e)
-        {
 
-        }
     }
 }
